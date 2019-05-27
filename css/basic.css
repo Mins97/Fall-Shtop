@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-size: 50px;
+	font-family: "나눔손글씨 붓";
+	float:left;
+}
+
+#menu{
+	float:right;
+	color: #000000;
+	width: 600px;
+	height: 30px;
+}
+
+#menu ul li{
+	 text-decoration:none;
+	list-style: none;
+	color: white;
+	line-height: 30px;
+	vertical-align: middle;
+	display: block;
+	font-family: "Trebuchet MS", Dotum, Arial;
+	font-weight: normal;
+	text-align: center;
+	
+}
+
+#menu:active{
+	color: #EFD169;
+}
+#main_img{
+	clear:both;
+}

@@ -4,20 +4,22 @@
 	<meta charset="utf-8">
 	<title>가을을 파는 옷가게</title>
 	<link href="css/basic3.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
 	<header>
 		<div id="logo">
-			<h1>가을을 파는 옷가게</h1>
+			<h1><div id="small">가을을 파는</div> 옷가게</h1>
 		</div>
 		<div id="menu">
-			<ul>
-				<li>세일</li>
-				<li>악세서리</li>
-				<li>신발</li>
-				<li>하의</li>
-				<li>상의</li>
-				<li>모자</li>
+			<ul class="nav nav-tabs">
+				<li role="presentation"><a href="#">세일</a></li>
+				<li role="presentation"><a href="#">악세서리</a></li>
+				<li role="presentation"><a href="#">신발</a></li>
+				<li role="presentation"><a href="#">하의</a></li>
+				<li role="presentation"><a href="#">상의</a></li>
+				<li role="presentation"><a href="#">모자</a></li>
+				<li role="presentation" class="active"><a href="#">홈페이지</a></li>
 			</ul>
 		</div>
 	</header>
@@ -27,7 +29,7 @@
 	<div id="hat">
 		<h2>Hats</h2>
 		<small>가을 남성 모자</small><br>
-		<table>
+		<table class="section">
 		<tr>
 			<td><img width="300px" src="img/가을남자패션모자01.jpg"></td>
 			<td><img width="300px" src="img/가을남자패션모자02.jpg"></td>
@@ -41,9 +43,9 @@
 		</table>
 	</div>
 	<div id="shirt">
-		<h2>shirt</h2>
+		<h2>Shirt</h2>
 		<small>가을 남성 상의</small><br>
-		<table>
+		<table class="section">
 		<tr>
 			<td><img width="300px" src="img/가을남자패션셔츠01.jpg"></td>
 			<td><img width="300px" src="img/가을남자패션셔츠02.jpg"></td>
@@ -57,9 +59,9 @@
 		</table>
 	</div>
 		<div id="pants">
-		<h2>pants</h2>
+		<h2>Pants</h2>
 		<small>가을 남성 하의</small><br>
-		<table>
+		<table class="section">
 		<tr>
 			<td><img width="300px" src="img/가을남자패션바지01.jpg"></td>
 			<td><img width="300px" src="img/가을남자패션바지02.jpg"></td>
@@ -73,9 +75,9 @@
 		</table>
 	</div>
 	<div id="shoes">
-		<h2>shoes</h2>
+		<h2>Shoes</h2>
 		<small>가을 남성 신발</small><br>
-		<table>
+		<table class="section">
 		<tr>
 			<td><img width="300px" src="img/가을남자패션신발01.jpg"></td>
 			<td><img width="300px" src="img/가을남자패션신발02.jpg"></td>
@@ -89,9 +91,9 @@
 		</table>
 	</div>
 	<div id="accessories">
-		<h2>accessories</h2>
+		<h2>Accessories</h2>
 		<small>악세서리</small><br>
-		<table>
+		<table class="section">
 		<tr>
 			<td><img width="300px" src="img/가을남자악세서리01.jpg"></td>
 			<td><img width="300px" src="img/가을남자악세서리02.jpg"></td>
@@ -105,30 +107,21 @@
 		</table>
 	</div>
 	
-		<footer>
-		<p>가을을 파는 옷가게</p>
-		<p id="description">
-				가을을 파는 옷가게 CEO: 김민성 TEL:02-1234-1234 PERMIT NUMPBER: 209-81-46242<br>
-				MAIL_ORDER: 제2002-서울강북-0263호 [사업자정보확인]<br>
-				Copyright&copy;2002 가을을 파는 옷가게. All rights Resered.
-			<p>
-    			<a href="http://css-validator.kldp.org/check/referer">
-        		<img style="border:0;width:80px;height:15px"
-            		src="//css-validator.kldp.org/images/validate/css-blue"
-            		alt="올바른 CSS입니다!" />
-    		</a>
-			</p>
-			<p>
-    			<a href="http://validator.kldp.org/check?uri=referer"
-      			onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
-      			src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
-  			</p>
-			<ul>
-				<a href=#><li>instagram</li></a>
-				<a href=#><li>twitter</li></a>
-				<a href=#><li>facebook</li></a>
-			</ul>
-		</p>
+	<footer>
+		<table id="footerTable">
+			<tr>
+				<td id="footerLogo"><div id="small2">가을을 파는</div>옷가게 </td>
+				<td id="footerDescription">가을을 파는 옷가게 CEO: 김민성 TEL:02-12341234
+					<br/> PERMIT NUMPBER: 209-81-46242
+					<br/>MAIL_ORDER: 제2002-서울강북-0263호 [사업자정보확인]
+					<br/>Copyright&copy;2002 가을을 파는 옷가게. All rights Resered.
+				<td id="SNSshare">인스타 페이스북 트위터</td>
+			</tr>
+		</table>
 	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
+
